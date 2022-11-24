@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1rem;
+    position: static;
+}
+
+form {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 255px;
+    height: 35px;
+    /* padding: 5px; */
+    background-color: #fff;
+}
+
+input {
+    border: none;
+    height: 30px;
+    width: 220px;
+}
+
+form i {
+    font-size: 1rem;
+    /* font-weight: 700; */
+}
+
+::placeholder {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#logo {
+    display: flex;
+}
+
+#logo i {
+    font-size: 1.7rem;
+}
+
+#logo h2{
+    color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+    background-color: rgb(18, 18, 88);
+}
+
+main img {
+    max-width: 100%;
+    /* height: 90%; */
+    object-fit: cover;
+    /* position: relative; */
+}
+
+main h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    background-color: red;
+}
+
+p {
+    position: absolute;
+    background-color: rgb(18, 18, 88);
+    color: #fff;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform ease 0.5s;
+}
+
+h3 {
+    color: #fff;
+    background-color: red;
+}
+
+main div:hover p{
+    transform: translateY(0);
+}
+
+main div{
+    /* border: 2px solid red; */
+    margin: 0.7rem;
+    height: 35rem;
+    position: relative;
+    overflow: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1rem;
+    color: #fff;
+}
