@@ -38,7 +38,7 @@ function showMovies(data) {
 		movieEl.appendChild(image);
         movieEl.appendChild(text);
 		// movieEl.appendChild(year);
-		movieEl.appendChild(pHeading);
+		// movieEl.appendChild(pHeading);
 		movieEl.appendChild(overvee);
         main.appendChild(movieEl);
 	});

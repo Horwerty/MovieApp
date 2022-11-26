@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 1024px;
+    margin: 0 auto;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -67,7 +72,6 @@ main h2 {
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
-    background-color: red;
 }
 
 p {
@@ -75,7 +79,7 @@ p {
     background-color: rgb(18, 18, 88);
     color: #fff;
     line-height: 1.7rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -83,11 +87,16 @@ p {
     max-height: 100%;
     transform: translateY(101%);
     transition: transform ease 0.5s;
+    overflow: scroll;
+}
+
+p::-webkit-scrollbar{
+    width: 2px;
 }
 
 h3 {
     color: #fff;
-    background-color: red;
+    background-color: tomato;
 }
 
 main div:hover p{
@@ -100,6 +109,7 @@ main div{
     height: 35rem;
     position: relative;
     overflow: hidden;
+    background-color: tomato;
 }
 
 footer {
@@ -108,4 +118,217 @@ footer {
     background-color: black;
     padding: 1rem;
     color: #fff;
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        width: 320px;
+        margin: 0 auto;
+        /* background-color: aqua; */
+    }
+
+    .header {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    form {
+        width: 30px;
+        height: 10px;
+        padding-left: 5px;
+    }
+    
+    input {
+        /* display: none; */
+        height: 10px;
+        width: 5px;
+        /* margin-left: 5px; */
+    }
+
+    ::placeholder {
+        font-size: .3rem;
+        font-weight: 400;
+    }
+    
+    form i {
+        font-size: 0.4rem;
+        /* font-weight: 700; */
+    }
+
+    #logo i {
+        font-size: 1rem;
+    }
+    
+    #logo h2{
+        font-size: 0.9rem;
+    }
+
+    main h2 {
+        font-size: 0.7rem;
+    }
+    
+    main div{
+        margin: 0.3rem;
+        height: 14.5rem;
+        /* position: relative;
+        overflow: hidden; */
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+    }
+
+    p {
+        line-height: 1rem;
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 321px) {
+    body {
+        width: 520px;
+        margin: 0 auto;
+        /* background-color: aqua; */
+    }
+
+    .header {
+        width: 100%;
+        padding: 1.2rem;
+    }
+    
+    form {
+        width: 80px;
+        height: 20px;
+        padding-left: 5px;
+    }
+    
+    input {
+        /* display: none; */
+        height: 10px;
+        width: 50px;
+        /* margin-left: 5px; */
+    }
+
+    ::placeholder {
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    
+    form i {
+        font-size: 0.7rem;
+        /* font-weight: 700; */
+    }
+
+    #logo i {
+        font-size: 1.5rem;
+    }
+    
+    #logo h2{
+        font-size: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.3rem;
+    }
+    
+    main div{
+        margin: 0.3rem;
+        height: 25rem;
+        /* position: relative;
+        overflow: hidden; */
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+    }
+
+    p {
+        line-height: 1rem;
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 762px) {
+    body {
+        width: 980px;
+        margin: 0 auto;
+        /* background-color: aqua; */
+    }
+
+    .header {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    
+    form {
+        width: 150px;
+        height: 30px;
+        padding-left: 5px;
+    }
+    
+    input {
+        /* display: none; */
+        height: 20px;
+        width: 70px;
+        /* margin-left: 5px; */
+    }
+
+    ::placeholder {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    form i {
+        font-size: 0.9rem;
+        /* font-weight: 700; */
+    }
+
+    #logo i {
+        font-size: 1.8rem;
+    }
+    
+    #logo h2{
+        font-size: 1.7rem;
+    }
+
+    main h2 {
+        font-size: 1rem;
+    }
+    
+    main div{
+        margin: 0.6rem;
+        height: 30rem;
+        /* position: relative;
+        overflow: hidden; */
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 1.2rem;
+    }
+
+    p {
+        line-height: 1.2rem;
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
 }
